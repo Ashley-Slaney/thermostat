@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+#header {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.thermostat {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.left {
+  margin: 20px 0;
+  width: 50%;
+}
+
+.right {
+  margin: 20px 0;
+  right: 0;
+  width: 50%;
+  border-left: 1px solid black;
+}
+
+.button {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px 0 10px 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+#display-temperature {
+  padding: 20px;
+  font-size: 80px;
+}
+
+#psm-toggle {
+  margin-top: 20px;
+}
+
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: red;
+}

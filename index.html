@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Thermostat</title>
+</head>
+<body>
+  <div class="container">
+
+    <h1 id="header">Thermostat</h1>
+    <div class="thermostat">
+
+      <div class="left">  
+        <p>Power Saving Mode: <span id="psm-status">On</span></p>
+        <button id="psm-on" class="button">On</button>
+        <button id="psm-off" class="button">Off</button>
+        <br>
+        <br>
+        <button id="temperature-reset" class="button">RESET</button>
+      </div>
+      
+      <!--  VISIT API SECTION -->
+      <!-- update temperature when power saving mode is turned off and temp is over 25 -->
+
+      <div class="right">
+        <p id="display-temperature"></p>
+        <button id="temperature-down" class="button">-</button>
+        <button id="temperature-up" class="button">+</button>
+
+      </div>
+    </div>
+
+</div>
+
+  <script src="src/thermostat.js"></script>
+  <script src="src/interface.js"></script>
+</body>
+</html>
