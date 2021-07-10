@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body, html {
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container {
   display: block;
   text-align: center;
@@ -14,6 +23,7 @@
   padding-top: 50px;
   text-align: center;
   font-size: 4rem;
+  color: rgba(50,100,150,0.7);
 }
 
 .thermostat {
@@ -25,6 +35,8 @@
   justify-content: center;
   align-items: center;
   max-width: 600px;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 1px 1px 0 0 rgba(50,100,150,0.5);
 }
 
 .left {
@@ -36,17 +48,22 @@
   margin: 20px 0;
   right: 0;
   width: 50%;
-  border-left: 1px solid black;
+  border-left: 1px solid rgba(0,0,0,0.4);
 }
 
 .button {
   font-size: 2rem;
   padding: 10px;
   margin: 10px 0 10px 10px;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 10px;
+
 }
 
 .button:hover {
   cursor: pointer;
+  background-color: rgba(0,0,100,0.1);
 }
 
 #display-temperature {
@@ -68,4 +85,10 @@
 
 .high-usage {
   color: red;
+}
+
+.city-input {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.4);
 }

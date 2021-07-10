@@ -23,7 +23,12 @@
       <!-- update temperature when power saving mode is turned off and temp is over 25 -->
 
       <div class="right">
-        <p id="display-temperature"></p>
+        <form id="select-city">
+          <h3>Current temperature:</h3>
+          <p id="display-temperature"></p>
+          <input id="current-city" class="city-input" type="text" placeholder="Enter a city"></input>
+          <input type="submit" class="button"></input>
+        </form>
         <button id="temperature-down" class="button">-</button>
         <button id="temperature-up" class="button">+</button>
 

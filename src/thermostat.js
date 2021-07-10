@@ -46,6 +46,7 @@ class Thermostat {
   }
 
   switchPowerSavingModeOff() {
+
     this.powerSavingMode = false;
   }
 
